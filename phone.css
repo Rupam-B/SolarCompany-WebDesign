@@ -1,0 +1,151 @@
+CSS Reset
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Navbar styling */
+#navbar{
+    flex-direction: column;
+    
+}
+
+#navbar ul li{
+    font-size: 0.9rem;
+}
+#navbar ul li a{
+   padding: 0px 10px;
+   padding-bottom: 8px;
+}
+
+
+/* Home Styling */
+#home{
+    height: 440px;
+}
+#home::before{
+
+    height: 550px;
+}
+
+#home h1{
+    font-size: 1.8rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+h1,h2{
+    margin-bottom: 0;
+    padding-top: 20px;
+     /* white-space: nowrap;       used for not breaking in multiple lines */
+     line-height: 1.35em
+  } 
+   p{
+    margin-top: 0;
+  } 
+#home h1:hover{
+    color: #26042b;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1.9rem;
+} 
+
+
+/* Types Of sys Styling */
+#systyps{
+    
+    height: 870px;
+}
+#systyps::before{
+    height: 870px;
+}
+#types{
+    flex-direction: column;
+}
+.boxes{
+
+    height: 220px;
+    width: 300px;
+}
+.boxes:hover{
+    height: 210px;
+    width: 360px;
+    background-color:rgb(223, 108, 108);
+}
+.boxes img{
+    height: 70px;
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/* Contact Form styling */
+
+
+#Contact form{
+    width: 300px;
+}
+#Contact{
+    height: 600px;
+}
+#Contact::before{
+height: 600px;
+}
+
+
+
+/* Our Clients Styling */
+
+#Logo{
+    height: 630px;
+}
+#Logo::before{
+   
+    height: 630px;
+}
+
+.container{
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+.loto { 
+    height: 145px;
+    width: 70px;
+
+}
+
+#Logo img{
+    height: 150px;
+    width: 100px;
+    padding: 0px 5px;
+}
+
+.foter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+
+/* utility Class Styling */
+
+.h-primary{
+    font-size:2rem;
+    font-family: 'Anton', sans-serif;
+    
+}
+.h-secondary{
+    font-size:1.7rem;
+    
+}
+.h-third{
+    
+    font-size: 1.2rem;
+    
+}
+.para{
+    font-size:0.9rem;
+    
+    
+}

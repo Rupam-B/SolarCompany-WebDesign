@@ -1,0 +1,281 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Smooth scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar Styling */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    position: fixed;
+    top: 2px;
+    width: 100%;
+    z-index: 1;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Image Styling */
+#logo{
+    margin: 10px 20px;
+}
+
+#logo img{
+    height: 60px;
+    border-radius: 32px;
+
+}
+#logo img:hover{
+    height: 70px;
+    border-radius: 32px;
+    cursor: pointer;
+    
+}
+/* list item styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;       /*because default display of <a> is inline>*/
+   text-decoration: none;
+   color: white;
+   padding: 2px 25px;
+   border-radius: 16px;
+   font-weight: bold;
+}
+#navbar ul li a:hover{
+  background-color: rgb(243, 83, 104);
+  color:white;
+}
+
+
+/* Home section styling */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center; */
+    align-items: center;
+    height: 525px;
+   
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('/Homebg1.jpg')no-repeat center center/cover;
+    height: 610px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: #3b1240;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-size: 3.6rem;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#home h1:hover{
+    color: #26042b;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 3.8rem;
+}
+#home p{
+   text-align: center;
+   margin: 10px 20px;
+   padding-bottom: 10px;
+}
+#btn{
+    margin: 4px;
+    font-size: larger;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background-color: rgb(255, 194, 183);
+}
+#btn:hover{
+    background-color: tomato;
+    cursor: pointer;
+    font-size:x-large;
+    
+    
+}
+
+
+/*Types section styling   */
+
+#systyps{
+    height: 610px;
+}
+#systyps h2{
+    padding-top: 30px;
+}
+#systyps::before{
+    content: "";
+    position: absolute;
+    background: url('/bg4.jpg')no-repeat center center/cover;
+    height: 610px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#types{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#types h3{
+padding: 6px;
+color: rgb(44, 33, 19);    
+}
+.boxes img{
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid saddlebrown;
+    height: 300px;
+    width: 380px;
+    margin: 10px 30px;
+    border-radius: 10px;
+    background-color: rgb(241, 230, 213);
+    padding: 10px;
+    
+}
+.boxes:hover{
+    height: 280px;
+    width: 410px;
+    background-color:rgb(241, 62, 62);
+    cursor:pointer;
+    color:black;
+    font-weight: bold;
+}
+
+/* styling of Form */
+
+#Contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 605px;
+}
+#Contact::before{
+content: "";
+position: absolute;
+background: url('/contactt.jpg')no-repeat center center/cover;
+height: 605px;
+width: 100%;
+z-index: -1;
+opacity: 0.9;
+}
+#Contact h2{
+    padding: 20px;
+}
+#Contact form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 4px;
+}
+#Contact form label {
+    margin-top: 10px;
+}
+#Contact form input, textarea {
+    padding: 4px;
+    border-radius: 6px;
+}
+
+/* logo Section */
+#Logo{
+    height: 630px;
+}
+#Logo h2{
+    padding-top: 10px;
+}
+.container{
+    display: flex;
+}
+#Logo::before{
+    content: "";
+    position:absolute;
+    background: url('/mainbg.jpg') no-repeat center center/cover;
+    height: 630px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+#Logo img{
+    height: 200px;
+    width: 270px;
+}
+
+
+.foter{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+/* Utility Classes */
+
+.h-primary{
+    font-size:3rem;
+    font-weight:bolder;
+    text-align: center;
+}
+.h-secondary{
+    font-size:2.7rem;
+    font-weight: bold;
+    text-align: center;
+}
+.h-third{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.para{
+    font-size:1.1rem;
+    text-align: center;
+    
+}
+
+
